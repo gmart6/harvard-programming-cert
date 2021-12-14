@@ -1,0 +1,24 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2 class="card-title">{{ listing.title }}</h2>
+    {% if listing.image_url %}
+        <img src="{{ listing.image_url }}" alt="{{ listing.title }}">
+    {% endif %}
+    <div>
+        <p><strong>Description:</strong> {{ listing.description }}</p>
+        {% if listing.category %}
+        <p><strong>Category: </strong>{{ listing.category }}</p>
+        {% endif %}
+        <hr>
+        <p><strong>Current Price: </strong>{{ listing.current_price }}</p>
+        <p><strong>Listed:</strong> {{ listing.listing_time }}</p>
+    </div>
+
+    {% if listing.isActive %}
+    <p>This auction ends when {{ listing.lister }} says it's over</p>
+    <h3>Bid</h3>
+    {% endif %}
+</div>
+
+{% endblock %}

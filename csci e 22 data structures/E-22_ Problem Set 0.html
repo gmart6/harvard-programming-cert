@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://sites.fas.harvard.edu/~cscie22/problem_sets/ps0.shtml -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>E-22: Problem Set 0</title>
+<link href="./E-22_ Problem Set 0_files/style.css" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="http://sites.fas.harvard.edu/~cscie22/img/favicon.ico">
+<link rel="shortcut icon" sizes="196x196" href="http://sites.fas.harvard.edu/~cscie22/img/favicon-196x196.png">
+
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<meta name="viewport" content="width=device-width">
+<script>
+window.app = {
+  metadata: {"layout": "assignment", "section": "problem_sets", "hash": "04b8a480c41c73e781f8f6dfbab3e90e", "title": "Problem Set 0"},
+  config: {"prefix": "/~cscie22"}
+};
+</script>
+
+<style type="text/css">body.zoom-out div#ro__extension {
+  zoom: 1.155; }
+
+#ro__extension {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 375px;
+  visibility: visible;
+  background-color: transparent;
+  z-index: 99999999999999;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3); }
+  #ro__extension:not(.problematic-chrome-version) {
+    transition: right .5s, width .5s;
+    -webkit-transition: right .5s, width .5s; }
+  #ro__extension div {
+    all: unset; }
+  #ro__extension body {
+    margin: 0; }
+    #ro__extension body div * {
+      all: unset; }
+  #ro__extension div * {
+    all: unset; }
+  #ro__extension .ro__tab-container {
+    position: relative;
+    height: 130px; }
+    #ro__extension .ro__tab-container.ui-draggable {
+      cursor: move; }
+  #ro__extension .ro__menu-container {
+    width: 38px;
+    height: 120px;
+    transition: opacity 0.2s, right 0.2s;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    background: #f7f7f7;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 100%;
+    padding: 12px 0;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box; }
+    #ro__extension .ro__menu-container #ro__button_minimize_container {
+      display: none; }
+    #ro__extension .ro__menu-container .ro__buttons-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      #ro__extension .ro__menu-container .ro__buttons-container-divider {
+        border-top: 1px solid #CFCFCF; }
+    #ro__extension .ro__menu-container .ro__button_container {
+      cursor: pointer; }
+      #ro__extension .ro__menu-container .ro__button_container:hover:not(.disabled) .ro__button-minimize-rectangle {
+        border-bottom: 2px solid #5957dd;
+        border-right: 2px solid #5957dd; }
+      #ro__extension .ro__menu-container .ro__button_container:hover:not(.disabled) .ro__button-close:before, #ro__extension .ro__menu-container .ro__button_container:hover:not(.disabled) .ro__button-close:after {
+        height: 1px;
+        background-color: #5957dd; }
+      #ro__extension .ro__menu-container .ro__button_container:hover:not(.disabled) .ro__button-outer-rectangle {
+        border: 2px solid #5957dd; }
+        #ro__extension .ro__menu-container .ro__button_container:hover:not(.disabled) .ro__button-outer-rectangle .ro__button-inner-rectangle {
+          background-color: #5957dd; }
+          #ro__extension .ro__menu-container .ro__button_container:hover:not(.disabled) .ro__button-outer-rectangle .ro__button-inner-rectangle.shrink {
+            width: 40%; }
+          #ro__extension .ro__menu-container .ro__button_container:hover:not(.disabled) .ro__button-outer-rectangle .ro__button-inner-rectangle.expand {
+            width: 85%; }
+      #ro__extension .ro__menu-container .ro__button_container.disabled {
+        pointer-events: none; }
+        #ro__extension .ro__menu-container .ro__button_container.disabled .ro__button-inner-rectangle {
+          border-color: #5957dd;
+          background-color: #5957dd; }
+        #ro__extension .ro__menu-container .ro__button_container.disabled .ro__button-outer-rectangle {
+          border: 2px solid #5957dd; }
+      #ro__extension .ro__menu-container .ro__button_container .ro__button {
+        height: 14px;
+        width: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+        #ro__extension .ro__menu-container .ro__button_container .ro__button-minimize-rectangle {
+          transition: color .2s;
+          width: 8px;
+          height: 8px;
+          transform: rotate(-45deg);
+          border-bottom: 2px solid #959595;
+          border-right: 2px solid #959595; }
+        #ro__extension .ro__menu-container .ro__button_container .ro__button.minimize, #ro__extension .ro__menu-container .ro__button_container .ro__button.close {
+          width: 17px;
+          margin: auto; }
+        #ro__extension .ro__menu-container .ro__button_container .ro__button-close {
+          color: white; }
+          #ro__extension .ro__menu-container .ro__button_container .ro__button-close:before, #ro__extension .ro__menu-container .ro__button_container .ro__button-close:after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            right: 0;
+            height: 1px;
+            /* cross thickness */
+            background-color: #959595; }
+          #ro__extension .ro__menu-container .ro__button_container .ro__button-close:before {
+            transform: rotate(45deg); }
+          #ro__extension .ro__menu-container .ro__button_container .ro__button-close:after {
+            transform: rotate(-45deg); }
+        #ro__extension .ro__menu-container .ro__button_container .ro__button-outer-rectangle {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          border-radius: 3px;
+          border: 2px solid #959595;
+          justify-content: flex-end; }
+        #ro__extension .ro__menu-container .ro__button_container .ro__button-inner-rectangle {
+          transition: color .2s, width .2s;
+          background-color: #959595;
+          border-left: 1px solid #959595;
+          border-radius: 0 1px 1px 0; }
+          #ro__extension .ro__menu-container .ro__button_container .ro__button-inner-rectangle.shrink {
+            width: 20%; }
+          #ro__extension .ro__menu-container .ro__button_container .ro__button-inner-rectangle.expand {
+            width: 75%; }
+
+#ro__extension.minimized {
+  right: -375px; }
+
+#ro__extension.large {
+  right: 0;
+  width: 80%; }
+
+#ro__extension_iframe {
+  position: static !important;
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  z-index: 10000;
+  border: none; }
+</style><style type="text/css">iframe#ro__extension_loader {
+  all: unset;
+  width: 100% !important;
+  height: 100% !important;
+  background: url(//do.zoominfo.com/assets/images/loader-bg.png) no-repeat bottom white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+</style></head>
+
+<body class="vsc-initialized" style="">
+
+<a id="top"></a>
+
+<div id="container">
+
+<div id="left"><div id="back-to-top" class="showing"><div id="back-to-top-inner">Back to top</div></div>
+
+  <div id="logo">
+    <div class="course_title">E-22</div>
+    <div class="course_name">Data Structures</div>
+  </div>
+
+  <ul class="nav">
+    <li><a href="http://sites.fas.harvard.edu/~cscie22/">Home</a></li>
+    <li><a href="http://sites.fas.harvard.edu/~cscie22/lectures/">Lectures</a></li>
+    <li><a href="http://sites.fas.harvard.edu/~cscie22/sections/">Sections</a></li>
+    <li class="current"><a href="http://sites.fas.harvard.edu/~cscie22/problem_sets/">Problem Sets</a></li>
+    <li><a href="http://sites.fas.harvard.edu/~cscie22/resources.shtml">Resources</a></li>
+  </ul>
+
+  <ul class="nav">
+    <li><a href="http://sites.fas.harvard.edu/~cscie22/files/syllabus_20fall.pdf">Syllabus</a></li>
+<!---    
+      <br>(Fall 2019)</li>
+    <li ><a href="/~cscie22/schedule.shtml">Schedule</a></li>
+--->
+    <li><a href="http://sites.fas.harvard.edu/~cscie22/staff.shtml">Staff</a></li>
+    <li><a href="http://sites.fas.harvard.edu/~cscie22/policies.shtml">Policies</a></li>
+<!---
+    <li ><a href="/~cscie22/distance_education.shtml">Distance Education</a></li>
+--->
+
+  </ul>
+
+  <ul class="nav external">
+    <li><a target="_blank" href="http://piazza.com/harvard/fall2020/cscie22">Piazza</a></li>
+    <li><a target="_blank" href="https://canvas.harvard.edu/courses/79836">Canvas</a></li>
+    <li><a target="_blank" href="https://www.gradescope.com/">Gradescope</a></li>
+  </ul>
+
+</div>
+
+<div id="right">
+<div id="right-inner">
+<h1>Problem Set 0</h1>
+
+<p><em>This assignment is due as soon as possible.</em></p>
+<div class="toc">
+<ul>
+<li><a href="http://sites.fas.harvard.edu/~cscie22/problem_sets/ps0.shtml#task-1-send-us-an-e-mail">Task 1: send us an e-mail</a></li>
+<li><a href="http://sites.fas.harvard.edu/~cscie22/problem_sets/ps0.shtml#task-2-review-course-policies">Task 2: review course policies</a></li>
+<li><a href="http://sites.fas.harvard.edu/~cscie22/problem_sets/ps0.shtml#task-3-install-the-necessary-software">Task 3: install the necessary software</a></li>
+<li><a href="http://sites.fas.harvard.edu/~cscie22/problem_sets/ps0.shtml#task-4-practice-submitting-a-file">Task 4: practice submitting a file</a></li>
+<li><a href="http://sites.fas.harvard.edu/~cscie22/problem_sets/ps0.shtml#task-5-check-your-account-settings-on-canvas">Task 5: check your account settings on Canvas</a></li>
+</ul>
+</div>
+<h2 id="task-1-send-us-an-e-mail">Task 1: send us an e-mail</h2>
+<p>Send an e-mail to the course account (<code>cscie22@fas.harvard.edu</code>)
+from whatever e-mail account you read most frequently.</p>
+<p><strong>Please use the subject line “Problem Set 0”</strong></p>
+<p>Please include the following information:</p>
+<ol>
+<li>your full name</li>
+<li>the nickname or other name that you would like us to use for you</li>
+<li>your credit status (undergraduate, graduate or non-credit) and whether
+    you are taking the course via the distance-ed option</li>
+<li>your hometown</li>
+<li>your current educational or work status</li>
+<li>a brief description of your background, including your prior
+    programming experience</li>
+<li>a brief description of why you’re taking this course</li>
+</ol>
+<p><strong>Important</strong>: Although we do eventually read through these emails, it
+can take us awhile to do so. Therefore, if you have a question or other
+matter that needs immediate attention, please send a separate e-mail to
+the course account.</p>
+<h2 id="task-2-review-course-policies">Task 2: review course policies</h2>
+<p>As your next task, please review the policies of the course, which are
+outlined in the <a href="http://sites.fas.harvard.edu/~cscie22/files/syllabus_20fall.pdf">syllabus</a>. In particular, please
+review carefully the policies on academic conduct. After you have read
+over these policies, feel free to let us know if you have any questions.</p>
+<h2 id="task-3-install-the-necessary-software">Task 3: install the necessary software</h2>
+<p>In your work for this course, you will need to have access to the
+following programming tools:</p>
+<ul>
+<li>the Java development kit (JDK), which gives you the low-level
+    tools needed to compile and run your Java programs</li>
+<li>the DrJava integrated development environment (IDE), which you will
+    use to develop your programs. (Note: You’re welcome to use another
+    IDE – or none at all – when developing your programs. However, you
+    will still need to install DrJava in order to make use of its
+    special Interactions Pane.)</li>
+</ul>
+<p>The steps needed to obtain and install these tools depend on the
+operating system that you’re using. Select the appropriate link below:</p>
+<ul>
+<li><a href="http://sites.fas.harvard.edu/~cscie22/problem_sets/install_mac.html">Mac OS X users</a></li>
+<li><a href="http://sites.fas.harvard.edu/~cscie22/problem_sets/install_win.html">Windows users</a></li>
+</ul>
+<h2 id="task-4-practice-submitting-a-file">Task 4: practice submitting a file</h2>
+<p>We will be using Gradescope for homework submissions.
+To avoid any last-minute problems when submitting the first homework,
+you may want to practice submitting a file as follows:</p>
+<ol>
+<li>
+<p>Open the <a href="https://docs.google.com/document/d/1ddN6QCZbicI2ojWhu76K8nbET7G1ha_h9tXwrhxJUX4/edit?usp=sharing" target="_blank">template</a> that we have
+    created in Google Docs.</p>
+</li>
+<li>
+<p>Select <em>File-&gt;Make a copy...</em>, and save the copy to your Google
+    Drive using the name <code>ps0</code>.</p>
+</li>
+<li>
+<p>Feel free to add some text to your copy of the template, although 
+    doing so is not required for this exercise.</p>
+</li>
+<li>
+<p>Choose <em>File-&gt;Download-&gt;PDF document</em>, and save the PDF file on
+    your machine.  The resulting PDF file (<code>ps0.pdf</code>) is the one
+    that you will submit. </p>
+</li>
+<li>
+<p>Login to Gradescope by clicking the following link:</p>
+<p><a href="https://www.gradescope.com/" target="_blank">Gradescope</a></p>
+<p>If you don’t have a Gradescope account, you should create one now
+using the link in the email from Gradescope that you should have
+received on the day of the first lecture. If you weren’t
+registered for the course at that point, or if you can’t find the
+email from Gradescope, send an email to <code>cscie22@fas.harvard.edu</code>
+so that we can add you.</p>
+</li>
+<li>
+<p>Once you are in logged in, click on the box for <strong><em>CSCI E-22</em></strong>.
+    (Here again, if you don’t see that box, email
+    <code>cscie22@fas.harvard.edu</code> ASAP and ask to be added to the course
+    on Gradescope.)</p>
+</li>
+<li>
+<p>Click on the name <strong><em>Problem Set 0</em></strong> in the list of
+    assignments.  You should see a pop-up window labeled
+    <strong><em>Submit Assignment</em></strong>.  (If you don’t see it, click the <strong><em>Submit</em></strong>
+    or <strong><em>Resubmit</em></strong> button at the bottom of the page.)</p>
+</li>
+<li>
+<p>Choose the <strong><em>Submit PDF</em></strong> option, and then click the <em>Select PDF</em>
+    button and find the <code>ps0.pdf</code> that you created above.
+    Then click the <em>Upload PDF</em> button.</p>
+</li>
+<li>
+<p>You should see an outline that includes four problems along with 
+    thumbnails of the page(s) from your uploaded PDF. For each problem 
+    in the outline:</p>
+<ul>
+<li>Click the title of the problem.</li>
+<li>Click the page(s) on which the answer for that problem can be found.</li>
+</ul>
+<p><strong><em>If this were an actual homework submission, you would click on
+the magnifying glass icon for each page and doublecheck that the
+pages that you see contain the work that you want us to grade.</em></strong></p>
+</li>
+<li>
+<p>Once you have assigned pages to all of the problems in the
+    question outline, click the <em>Submit</em> button in the lower-right corner
+    of the window.</p>
+</li>
+<li>
+<p>You should see a box saying that your submission was successful.
+    Click the <code>(x)</code> button to close that box.</p>
+</li>
+<li>
+<p>You can use the <strong><em>Resubmit</em></strong> button at the bottom of the page to
+    resubmit your work as many times as needed before the final deadline.</p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<ul>
+<li>
+<p>It is your responsibility to ensure that the correct version
+    of a file is on Gradescope before the final deadline. <strong><em>We
+    will not accept any file after the submission window for a
+    given assignment has closed, so please check your submission
+    carefully using the steps outlined above.</em></strong></p>
+</li>
+<li>
+<p>If you are unable to access Gradescope and there is enough
+    time to do so, wait an hour or two and then try again.  If you
+    are unable to submit and it is close to the deadline, email
+    your homework <strong><em>before the deadline</em></strong> to
+    <code>cscie22@fas.harvard.edu</code></p>
+</li>
+</ul>
+</div>
+<h2 id="task-5-check-your-account-settings-on-canvas">Task 5: check your account settings on Canvas</h2>
+<p>We will also be using Canvas for announcements.
+To ensure that you are receive all announcements as soon as they are
+sent, you should do the following:</p>
+<ul>
+<li>Go to <a href="https://canvas.harvard.edu/courses/79836" target="top">Canvas</a> (logging in as needed using your HarvardKey).</li>
+<li>Click the link labeled <em>Account</em> in the left-hand navigation bar,
+    and then click <em>Settings</em>.</li>
+<li>Check that your <em>Default Email</em> is one that you check on a regular
+    basis. If necessary, find the section of the page labeled <em>Ways to
+    Contact</em> and add an email address. If you have more than one email
+    address listed, make sure that the star appears next to one
+    that you check regularly.</li>
+<li>Next, click the link labeled <em>Account</em> in the left-hand navigation
+    bar, and then click <em>Notifications</em>.</li>
+<li>In the <em>Notification Preferences</em> table, find the row labeled
+    <em>Announcement</em>, and click the checkmark symbol in the column from that
+    row that corresponds to the email address that you check regularly. This
+    will ensure that you are notified right away of all new announcements.</li>
+</ul>
+
+
+<p class="last_updated">Last updated on September 21, 2020.</p>
+
+<button class="js-dark-toggle toggle"><span class="toggle-icon material-icons"></span></button>
+
+</div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+var MIN_SCROLL_AMOUNT = 150;
+
+var logoElement = document.getElementById('logo');
+var backToTopElement = document.getElementById('back-to-top');
+var showingBackToTop = false;
+
+if (logoElement &&
+    backToTopElement &&
+    !isMobile(navigator.userAgent || navigator.vendor || window.opera)
+) {
+  backToTopElement.onclick = function() {
+    window.scroll(0, 0);
+  };
+
+  window.setInterval(function() {
+    if (backToTopElement.className !== 'showing' && getScrollAmount() > MIN_SCROLL_AMOUNT) {
+      backToTopElement.className = 'showing';
+    }
+
+    if (backToTopElement.className === 'showing' && getScrollAmount() < MIN_SCROLL_AMOUNT) {
+      backToTopElement.className = '';
+    }
+  }, 500);
+}
+
+function getScrollAmount() {
+  return Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+}
+
+function isMobile(a) {return (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|(o|a)d)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))}
+</script>
+
+
+
+<script src="./E-22_ Problem Set 0_files/main.js"></script>
+
+
+
+
+</body><div id="vimeo-screen-recorder-container"></div></html>

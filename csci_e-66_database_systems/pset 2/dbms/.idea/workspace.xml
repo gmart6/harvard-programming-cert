@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="faf75986-1766-47b4-a8ed-fa9a674d7c6f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="CLEAR_OUTPUT_DIRECTORY" value="false" />
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <analyzeAfterCompile>true</analyzeAfterCompile>
+    <toolWindowToFront>false</toolWindowToFront>
+  </component>
+  <component name="ProjectId" id="1puZgZY7SBPsue7zhnyL6SVWHag" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showModules" value="false" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration name="DBMS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DBMS" />
+      <module name="dbms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DBMS" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="278" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616035634372">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="278" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/-2387.-1096.1920.1057/-467.-1417.2560.1417@0.23.1440.877" timestamp="1616035634372" />
+    <state x="652" y="179" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1616035082486">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="652" y="179" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.23.1440.877/-2387.-1096.1920.1057/-467.-1417.2560.1417@0.23.1440.877" timestamp="1616035082486" />
+    <state width="1076" height="247" key="GridCell.Tab.0.bottom" timestamp="1616036535346">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1076" height="247" key="GridCell.Tab.0.bottom/0.23.1440.877/-2387.-1096.1920.1057/-467.-1417.2560.1417@0.23.1440.877" timestamp="1616036535346" />
+    <state width="1076" height="247" key="GridCell.Tab.0.center" timestamp="1616036535345">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1076" height="247" key="GridCell.Tab.0.center/0.23.1440.877/-2387.-1096.1920.1057/-467.-1417.2560.1417@0.23.1440.877" timestamp="1616036535345" />
+    <state width="1076" height="247" key="GridCell.Tab.0.left" timestamp="1616036535344">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1076" height="247" key="GridCell.Tab.0.left/0.23.1440.877/-2387.-1096.1920.1057/-467.-1417.2560.1417@0.23.1440.877" timestamp="1616036535344" />
+    <state width="1076" height="247" key="GridCell.Tab.0.right" timestamp="1616036535345">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1076" height="247" key="GridCell.Tab.0.right/0.23.1440.877/-2387.-1096.1920.1057/-467.-1417.2560.1417@0.23.1440.877" timestamp="1616036535345" />
+    <state x="265" y="55" key="SettingsEditor" timestamp="1616036266753">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="265" y="55" key="SettingsEditor/0.23.1440.877/-2387.-1096.1920.1057/-467.-1417.2560.1417@0.23.1440.877" timestamp="1616036266753" />
+  </component>
+</project>

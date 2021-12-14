@@ -1,0 +1,32 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Active Listings</h2>
+
+    <!-- Search for Bootstrap boxes yielded "cards"-->
+    {% for listing in active_listings %}
+    <div class="card">
+        <a href="{% url 'listing' listing.id %}">
+            <h3 class="card-title">{{ listing.title }}</h3>
+        </a>
+        {% if listing.image_url %}
+        <img src="{{ listing.image_url }}" class="card-img" alt="{{ listing.title }}">
+        {% endif %}
+        <div class="card-body">
+            <p><strong>Description:</strong> {{ listing.description }}</p>
+            {% if listing.category %}
+            <p><strong>Category: </strong>{{ listing.category }}</p>
+            {% endif %}
+            <hr>
+            <p><strong>Current Price: </strong>{{ listing.current_price }}</p>
+            <p><strong>Listed:</strong> {{ listing.listing_time }}</p>
+
+        </div>
+    </div>
+
+    {% empty %}
+    Currently, there are no active listings.
+    {% endfor %}
+
+
+{% endblock %}
